@@ -60,8 +60,9 @@ final class Main {
         System.out.println(poppedString + colours.popItem());
         System.out.println(peakString + clours.peak());
         System.out.println(coloursString + colours.showStack());
-        System.out.println(lengthString + colours.size());
-        System.out.println(isEmptyString + colours.isEmpty());
+        colours.clear();
+        System.out.println(clearingStackString);
+        System.out.println(coloursString + colours.showStack());
         System.out.println("");
 
         final CurtisStack shapes = new CurtisStack();
@@ -69,13 +70,10 @@ final class Main {
         shapes.push("triangle");
         shapes.push("circle");
         System.out.println(shapesString + shapes.showStack());
-        System.out.println(poppedString + shapes.popItem());
-        System.out.println(poppedString + shapes.popItem());
-        System.out.println(poppedString + shapes.popItem());
-        System.out.println(poppedString + shapes.popItem());
-        System.out.println(shapesString + shapes.showStack());
-        System.out.println(lengthString + shapes.size());
-        System.out.println(isEmptyString + shapes.isEmpty());
+        System.out.println(peakString + shapes.peak());
+        shapes.clear();
+        System.out.println(clearingStackString);
+        System.out.println(peakString + shapes.peak());
         System.out.println("");
 
         System.out.println("\nDone.");
