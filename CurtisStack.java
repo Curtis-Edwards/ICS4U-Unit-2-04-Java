@@ -37,7 +37,7 @@ public class CurtisStack {
         if (!isEmpty()) {
             peakedItem = stackAsList.get(stackAsList.size() - 1);
         } else {
-            peakedItem = "nothing to peak";
+            peakedItem = null;
         }
       return peakedItem;
     }
