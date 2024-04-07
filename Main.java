@@ -55,10 +55,10 @@ final class Main {
         colours.push("green");
         colours.push("blue");
         System.out.println(coloursString + colours.showStack());
-        System.out.println(peakString + clours.peak());
+        System.out.println(peakString + colours.peak());
         System.out.println(poppedString + colours.popItem());
         System.out.println(poppedString + colours.popItem());
-        System.out.println(peakString + clours.peak());
+        System.out.println(peakString + colours.peak());
         System.out.println(coloursString + colours.showStack());
         colours.clear();
         System.out.println(clearingStackString);
