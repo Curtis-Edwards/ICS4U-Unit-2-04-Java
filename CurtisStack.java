@@ -33,13 +33,13 @@ public class CurtisStack {
      * @return the peaked string
      */
     public String peak() {
-      final String peakedItem;
+        final String peakedItem;
         if (!isEmpty()) {
             peakedItem = stackAsList.get(stackAsList.size() - 1);
         } else {
             peakedItem = null;
         }
-      return peakedItem;
+        return peakedItem;
     }
 
     /**
@@ -64,7 +64,7 @@ public class CurtisStack {
                 values += ", ";
             }
         }
-    return values;
+        return values;
     }
 
     /**
