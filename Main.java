@@ -34,16 +34,20 @@ final class Main {
         final String shapesString = "shapes: ";
         final String lengthString = "length: ";
         final String isEmptyString = "is empty: ";
+        final String peakString = "peak: ";
+        final String clearingStackString = "Clearing stack...";
 
         final CurtisStack fruits = new CurtisStack();
         fruits.push("apple");
         fruits.push("banana");
         fruits.push("cherry");
         System.out.println(fruitsString + fruits.showStack());
+        System.out.println(peakString + fruits.peak());
         System.out.println(poppedString + fruits.popItem());
         System.out.println(fruitsString + fruits.showStack());
-        System.out.println(lengthString + fruits.size());
-        System.out.println(isEmptyString + fruits.isEmpty());
+        fruits.clear();
+        System.out.println(clearingStackString);
+        System.out.println(fruitsString + fruits.showStack());
         System.out.println("");
 
         final CurtisStack colours = new CurtisStack();
@@ -51,8 +55,10 @@ final class Main {
         colours.push("green");
         colours.push("blue");
         System.out.println(coloursString + colours.showStack());
+        System.out.println(peakString + clours.peak());
         System.out.println(poppedString + colours.popItem());
         System.out.println(poppedString + colours.popItem());
+        System.out.println(peakString + clours.peak());
         System.out.println(coloursString + colours.showStack());
         System.out.println(lengthString + colours.size());
         System.out.println(isEmptyString + colours.isEmpty());
